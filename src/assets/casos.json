@@ -1,0 +1,25 @@
+  [{
+    "departamento": "FM",
+    "casos": 9,
+    "activos": 5,
+    "muertos": 0,
+    "recuperados": 4
+  }, {
+    "departamento": "Atlantida",
+    "casos": 19,
+    "activos": 5,
+    "muertos": 0,
+    "recuperados": 4
+  }, {
+    "departamento": "Cortes",
+    "casos": 29,
+    "activos": 5,
+    "muertos": 0,
+    "recuperados": 4
+  }, {
+    "departamento": "Copan",
+    "casos": 17,
+    "activos": 5,
+    "muertos": 0,
+    "recuperados": 4
+  }]
