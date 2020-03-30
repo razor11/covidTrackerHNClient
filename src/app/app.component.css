@@ -51,6 +51,8 @@
     opacity: 0.8;
   }
 
+
+  
   .content {
     display: flex;
     margin: 82px auto 32px;
@@ -78,7 +80,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 18px;
   }
 
   .card {
@@ -213,17 +215,6 @@
     box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   }
 
-  footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 20px;
-  }
-
-  footer a {
-    display: flex;
-    align-items: center;
-  }
 
   .github-star-badge {
     color: #24292e;
@@ -259,6 +250,68 @@
     width: 1920px;
   }
 
+
+
+.footer-distributed {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #24292e;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  margin-bottom: 0;
+  font: normal 12px sans-serif;
+  padding: 20px 20px;
+}
+
+
+/* Footer links */
+
+
+.footer-distributed .footer-links .link-1:before {
+  content: none;
+}
+
+.footer-distributed .footer-right {
+ color: white;
+  text-align: center;
+ 
+}
+
+.footer-distributed .footer-right a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-left: 3px;
+  transition:all .25s;
+}
+
+.footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+
+.footer-distributed p.footer-links a:hover{text-decoration:underline;}
+
+/* Media Queries */
+
+@media (max-width: 600px) {
+  .footer-distributed .footer-left, .footer-distributed .footer-right {
+    text-align: center;
+  }
+  .footer-distributed .footer-right {
+    float: none;
+    margin: 0 auto 20px;
+  }
+  .footer-distributed .footer-left p.footer-links {
+    line-height: 1.8;
+  }
+}
 
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
