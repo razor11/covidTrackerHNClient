@@ -21,8 +21,6 @@ export class AppComponent {
   data = null;
   totales: number;
   activosTot: number;
-  interval: any;
-
   RecuperdadosTot: number;
   muertosTot: number;
   constructor(private zone: NgZone,
@@ -33,17 +31,9 @@ export class AppComponent {
   title = 'coviMapHn';
 
 
+
+
   ngAfterViewInit() {
-    this.refreshData();
-    this.interval = setInterval(() => { 
-        this.refreshData(); 
-    }, 50000);
-}
-
-
-
-
-refreshData() {
 
       this.covid19Casos.getCasosCovid().subscribe(data => {
       console.log('Consulta data: ' + JSON.stringify(data));
