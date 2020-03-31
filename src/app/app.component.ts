@@ -55,8 +55,8 @@ export class AppComponent {
         const categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
         categoryAxis.dataFields.category = 'departamento';
         categoryAxis.title.text = 'Casos por Departamento';
-        categoryAxis.renderer.grid.template.location = 10;
-        categoryAxis.renderer.minGridDistance = 60;
+        categoryAxis.renderer.grid.template.location = 0;
+        categoryAxis.renderer.minGridDistance = 40;
 
         const valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
 
