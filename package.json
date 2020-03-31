@@ -4,14 +4,16 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod --build-optimizer=false",
+    "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev:ssr": "ng run covid19Hn:serve-ssr",
     "serve:ssr": "node dist/covid19Hn/server/main.js",
     "build:ssr": "ng build --prod && ng run covid19Hn:server:production",
-    "prerender": "ng run covid19Hn:prerender"
+    "prerender": "ng run covid19Hn:prerender",
+    "start:heroku":"node dist/covid19Hn/server/main.js",
+    "heroku-postbuild":"npm run build:ssr"
   },
   "private": true,
   "dependencies": {
