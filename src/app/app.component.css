@@ -7,6 +7,11 @@
     -moz-osx-font-smoothing: grayscale;
   }
 
+  html {
+    position: relative;
+    min-height: 100%;
+}
+
   
   h1,
   h2,
@@ -253,7 +258,7 @@
 
 
 .footer-distributed {
-  position: fixed;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -301,8 +306,9 @@
 /* Media Queries */
 
 @media (max-width: 600px) {
-  .footer-distributed .footer-left, .footer-distributed .footer-right {
+  .footer-distributed  {
     text-align: center;
+    position: relative;
   }
   .footer-distributed .footer-right {
     float: none;
