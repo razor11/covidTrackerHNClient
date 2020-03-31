@@ -4,16 +4,14 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
+    "build": "ng build --prod --build-optimizer=false",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
     "dev:ssr": "ng run covid19Hn:serve-ssr",
     "serve:ssr": "node dist/covid19Hn/server/main.js",
     "build:ssr": "ng build --prod && ng run covid19Hn:server:production",
-    "prerender": "ng run covid19Hn:prerender",
-     "start:heroku": "node dist/covid19Hn/server/main.js",
-     "heroku-postbuild": "npm run build:ssr"
+    "prerender": "ng run covid19Hn:prerender"
   },
   "private": true,
   "dependencies": {
@@ -26,7 +24,10 @@
     "@angular/forms": "~9.1.0",
     "@angular/platform-browser": "~9.1.0",
     "@angular/platform-browser-dynamic": "~9.1.0",
+    "@angular/platform-server": "~9.1.0",
     "@angular/router": "~9.1.0",
+    "@nguniversal/express-engine": "^9.1.0",
+    "express": "^4.15.2",
     "rxjs": "~6.5.4",
     "rxjs-compat": "^6.5.4",
     "tslib": "^1.10.0",
@@ -54,9 +55,5 @@
     "ts-node": "~8.3.0",
     "tslint": "~6.1.0",
     "typescript": "~3.8.3"
-  },
-  "engines": {
-    "node": "10.19.0",
-    "npm": "6.13.4"
   }
 }
