@@ -1,25 +1,56 @@
   [{
-    "departamento": "FM",
-    "casos": 9,
-    "activos": 5,
+    "departamento": "Francisco Morazán",
+    "casos": 37,
+    "activos": 36,
     "muertos": 0,
-    "recuperados": 4
+    "recuperados": 1
   }, {
-    "departamento": "Atlantida",
-    "casos": 19,
-    "activos": 5,
-    "muertos": 0,
-    "recuperados": 4
+    "departamento": "Cortés",
+    "casos": 79,
+    "activos": 71,
+    "muertos": 7,
+    "recuperados": 1
   }, {
-    "departamento": "Cortes",
-    "casos": 29,
-    "activos": 5,
+    "departamento": "Colón",
+    "casos": 14,
+    "activos": 14,
     "muertos": 0,
-    "recuperados": 4
+    "recuperados": 0
   }, {
-    "departamento": "Copan",
-    "casos": 17,
-    "activos": 5,
+    "departamento": "Lempira",
+    "casos": 3,
+    "activos": 3,
     "muertos": 0,
-    "recuperados": 4
-  }]
+    "recuperados": 0
+  },
+  {
+    "departamento": "Yoro",
+    "casos": 3,
+    "activos": 3,
+    "muertos": 0,
+    "recuperados": 0
+  },
+  {
+    "departamento": "Choluteca",
+    "casos": 2,
+    "activos": 2,
+    "muertos": 0,
+    "recuperados": 0
+  },
+  {
+    "departamento": "Santa Bárbara",
+    "casos": 2,
+    "activos": 2,
+    "muertos": 0,
+    "recuperados": 0
+  },
+  {
+    "departamento": "Atlántida",
+    "casos": 1,
+    "activos": 0,
+    "muertos": 0,
+    "recuperados": 1
+  }
+
+
+]
