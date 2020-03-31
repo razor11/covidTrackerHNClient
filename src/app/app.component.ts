@@ -53,10 +53,10 @@ export class AppComponent {
 
         // Create axes
         const categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
-      // categoryAxis.dataFields.category = 'departamento';
+        categoryAxis.dataFields.category = 'departamento';
         categoryAxis.title.text = 'Casos por Departamento';
-        categoryAxis.renderer.grid.template.location = 0;
-        categoryAxis.renderer.minGridDistance = 10;
+        categoryAxis.renderer.grid.template.location = 10;
+        categoryAxis.renderer.minGridDistance = 60;
 
         const valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
 
@@ -92,7 +92,7 @@ export class AppComponent {
 
         // Add cursor
         chart.cursor = new am4charts.XYCursor();
-
+        chart.scrollbarX = new am4core.Scrollbar();
         // Add legend
         chart.legend = new am4charts.Legend();
 
