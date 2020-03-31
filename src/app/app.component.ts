@@ -24,15 +24,16 @@ export class AppComponent {
   RecuperdadosTot: number;
   muertosTot: number;
   constructor(private zone: NgZone,
+            
               public covid19Casos: Covid19hnService) { 
                 this.data = null;
               }
   title = 'coviMapHn';
 
 
-  async ngOnInit() {
+   ngOnInit() {
     
-    await  this.covid19Casos.getCasosCovid().subscribe(data => {
+      this.covid19Casos.getCasosCovid().subscribe(data => {
       console.log('Consulta data: ' + JSON.stringify(data));
       this.data = data;
       console.log(this.data);
@@ -117,10 +118,13 @@ export class AppComponent {
 
   }
 
-  ngAfterViewInit(){
-      this.data = null;
-      this.ngOnInit();
-      console.log(this.data);
-   }
+  ngOnDestroy(){
+    this.data = null;
+    this.totales = 0;
+    this.activosTot = 0;
+    this.RecuperdadosTot = 0;
+    this.muertosTot = 0;
+  }
+
 
 }
