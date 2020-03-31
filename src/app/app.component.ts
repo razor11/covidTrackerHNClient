@@ -21,6 +21,8 @@ export class AppComponent {
   data = null;
   totales: number;
   activosTot: number;
+  interval: any;
+
   RecuperdadosTot: number;
   muertosTot: number;
   constructor(private zone: NgZone,
@@ -31,14 +33,24 @@ export class AppComponent {
   title = 'coviMapHn';
 
 
-   ngOnInit() {
-    
+  ngAfterViewInit() {
+    this.refreshData();
+    this.interval = setInterval(() => { 
+        this.refreshData(); 
+    }, 50000);
+}
+
+
+
+
+refreshData() {
+
       this.covid19Casos.getCasosCovid().subscribe(data => {
       console.log('Consulta data: ' + JSON.stringify(data));
       this.data = data;
       console.log(this.data);
       this.zone.runOutsideAngular(() => {
-        const chart = am4core.create('chartdiv', am4charts.XYChart);
+        let chart = am4core.create('chartdiv', am4charts.XYChart);
 
         chart.data = this.data;
         this.totales = this.data.reduce((sum, value) => (typeof value.casos === 'number' ? sum + value.casos : sum), 0);
@@ -107,7 +119,7 @@ export class AppComponent {
       });
 
 
-
+    
 
 
 
@@ -118,13 +130,12 @@ export class AppComponent {
 
   }
 
-  ngOnDestroy(){
-    this.data = null;
-    this.totales = 0;
-    this.activosTot = 0;
-    this.RecuperdadosTot = 0;
-    this.muertosTot = 0;
+  ngOnDestroy() {
+    this.zone.runOutsideAngular(() => {
+      if (this.data) {
+        this.data.dispose();
+      }
+    });
   }
-
 
 }
