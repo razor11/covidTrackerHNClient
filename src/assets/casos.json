@@ -1,8 +1,8 @@
   [{
     "departamento": "F.M",
     "casos": 37,
-    "activos": 36,
-    "muertos": 0,
+    "activos": 35,
+    "muertos": 1,
     "recuperados": 1
   }, {
     "departamento": "Cortés",

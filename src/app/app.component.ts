@@ -30,10 +30,9 @@ export class AppComponent {
   title = 'coviMapHn';
 
 
-
-  ngAfterViewInit() {
+  async ngOnInit() {
     
-    this.covid19Casos.getCasosCovid().subscribe(data => {
+    await  this.covid19Casos.getCasosCovid().subscribe(data => {
       console.log('Consulta data: ' + JSON.stringify(data));
       this.data = data;
       console.log(this.data);
@@ -117,5 +116,11 @@ export class AppComponent {
 
 
   }
+
+  ngAfterViewInit(){
+      this.data = null;
+      this.ngOnInit();
+      console.log(this.data);
+   }
 
 }
