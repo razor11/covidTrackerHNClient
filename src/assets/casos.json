@@ -1,32 +1,32 @@
   [{
     "departamento": "F.M",
-    "casos": 37,
-    "activos": 35,
+    "casos": 39,
+    "activos": 37,
     "muertos": 1,
     "recuperados": 1
   }, {
     "departamento": "Cortés",
-    "casos": 79,
-    "activos": 71,
-    "muertos": 7,
+    "casos": 103,
+    "activos": 101,
+    "muertos": 1,
     "recuperados": 1
   }, {
     "departamento": "Colón",
-    "casos": 14,
-    "activos": 14,
+    "casos": 18,
+    "activos": 18,
     "muertos": 0,
     "recuperados": 0
   }, {
     "departamento": "Lempira",
-    "casos": 3,
-    "activos": 3,
+    "casos": 4,
+    "activos": 4,
     "muertos": 0,
     "recuperados": 0
   },
   {
     "departamento": "Yoro",
-    "casos": 3,
-    "activos": 3,
+    "casos": 2,
+    "activos": 2,
     "muertos": 0,
     "recuperados": 0
   },
@@ -39,16 +39,16 @@
   },
   {
     "departamento": "Santa Bárbara",
-    "casos": 2,
-    "activos": 2,
+    "casos": 1,
+    "activos": 1,
     "muertos": 0,
     "recuperados": 0
   },
   {
     "departamento": "Atlántida",
-    "casos": 1,
-    "activos": 0,
-    "muertos": 0,
+    "casos": 3,
+    "activos": 1,
+    "muertos": 1,
     "recuperados": 1
   }
 
