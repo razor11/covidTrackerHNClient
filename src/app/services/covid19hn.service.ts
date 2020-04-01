@@ -13,7 +13,7 @@ export class Covid19hnService {
 
 
   getCasosCovid(){
-    return this.http.get('/assets/casos.json');
+    return this.http.get('/assets/casos.json/?t=1538041780');
   }
 
 
