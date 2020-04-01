@@ -28,17 +28,16 @@ export class AppComponent {
             
               public covid19Casos: Covid19hnService) { 
                 this.data = null;
-                this.interval = setInterval(() => { 
-                  this.ngOnInit(); 
-              }, 7000);
+                
               }
   title = 'coviMapHn';
 
+ 
 
    ngOnInit() {
     
       this.covid19Casos.getCasosCovid().subscribe(data => {
-      console.log('Consulta data: ' + JSON.stringify(data));
+      // console.log('Consulta data: ' + JSON.stringify(data));
       this.data = data;
       console.log(this.data);
       this.zone.runOutsideAngular(() => {
