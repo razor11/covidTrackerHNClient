@@ -33,9 +33,9 @@ export class AppComponent {
 
 
 
-  ngAfterViewInit() {
+ async ngOnInit() {
 
-      this.covid19Casos.getCasosCovid().subscribe(data => {
+     await this.covid19Casos.getCasosCovid().subscribe(data => {
       console.log('Consulta data: ' + JSON.stringify(data));
       this.data = data;
       console.log(this.data);
